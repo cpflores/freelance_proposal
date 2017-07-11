@@ -14,8 +14,12 @@
     estimated_hours: (80 + proposal),
     hourly_rate: 100,
     weeks_to_complete: 12,
-    client_email: 'chad@levitatestrategies.com',
+    client_email: 'chad@levitatestrategies.com'
   )
 end
 
 puts "10 proposals have been created"
+
+Proposal.create!(customer: "Google", portfolio_url: 'http://chadflo.com', tools: 'Ruby on Rails, Angular 2/4, Postgresql', estimated_hours: 120, hourly_rate: 100, weeks_to_complete: 12, client_email: 'chad@levitatestrategies.com')
+
+puts "1 different proposal has been created"
